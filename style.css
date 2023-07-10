@@ -1,0 +1,123 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background: linear-gradient(120deg, #56ba3f, #f2dc38);
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+}
+
+input {
+    background-color: rgba(0,0,0,0);
+    font-size: 20px;
+    width: 60px;
+    height: 20px;
+    border: 3px solid rgba(0,0,0,0.7);
+    border-radius: 10px;
+}
+
+img {
+    width: 50px;
+    -webkit-user-drag: none;
+    user-select: none;
+    pointer-events: none;
+}
+
+button {
+    background-color: rgba(0,0,0,0);
+    border: 3px solid rgba(0,0,0,0.7);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 25px;
+    transition: all .1s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.1); 
+    border: 3px solid rgba(0,0,0,1);
+}
+
+
+.heading {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container {
+    border: 3px solid rgba(0,0,0,0.7);
+    border-radius: 10px;
+    padding: 10px 10px;
+    display: flex;
+}
+
+.players {
+    justify-content: space-between;
+}
+
+.cards {
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+}
+
+.holder {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+
+
+.player {
+    border: 3px solid rgba(0,0,0,0.7);
+    border-radius: 10px;
+    padding: 10px 10px;
+    width: 200px;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.player h1 {
+    font-size: 25px;
+}
+
+
+
+.card {
+    border: 3px solid rgba(0,0,0,0.6);
+    border-radius: 10px;
+    width: 100px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    cursor: grab;
+}
+
+.card p {
+    margin: 1px;
+    user-select: none;
+    pointer-events: none;
+}
+
+.town {
+    background-color: #49ff20;
+}
+
+.mafia {
+    background-color: #ff2020;
+}
+
+.neutral {
+    background-color: #a8a8a8;
+}

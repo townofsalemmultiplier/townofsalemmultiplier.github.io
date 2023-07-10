@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <title>TOS Multipliers</title>
+</head>
+
+<body>
+
+    <div class="heading">
+        <button id="questionmark">?</button>
+        <h1>Town Of Salem Multiplier Deck Creator</h1>
+        <h1 id="value">Value: 0</h1>
+    </div>
+
+    <div class="container players" id="players container">
+
+        <div class="player" id="James">
+            <div class="holder">
+                <h1>James</h1>
+                <input type="number" step="0.05" value="1.3" id="James multiplier">
+            </div>
+            <p id="James value">Player Value: 0</p>
+        </div>
+
+        <div class="player" id="Harrison">
+            <div class="holder">
+                <h1>Harrison</h1>
+                <input type="number" step="0.05" value="1.3" id="Harrison multiplier">
+            </div>
+            <p id="Harrison value">Player Value: 0</p>
+        </div>
+
+        <div class="player" id="Holly">
+            <div class="holder">
+                <h1>Holly</h1>
+                <input type="number" step="0.05" value="1" id="Holly multiplier">
+            </div>
+            <p id="Holly value">Player Value: 0</p>
+        </div>
+
+        <div class="player" id="Alison">
+            <div class="holder">
+                <h1>Alison</h1>
+                <input type="number" step="0.05" value="1.1" id="Alison multiplier">
+            </div>
+            <p id="Alison value">Player Value: 0</p>
+        </div>
+
+        <div class="player" id="Cheryl">
+            <div class="holder">
+                <h1>Cheryl</h1>
+                <input type="number" step="0.05" value="1.1" id="Cheryl multiplier">
+            </div>
+            <p id="Cheryl value">Player Value: 0</p>
+        </div>
+
+        <div class="player" id="Phil">
+            <div class="holder">
+                <h1>Phil</h1>
+                <input type="number" step="0.05" value="0.4" id="Phil multiplier">
+            </div>
+            <p id="Phil value">Player Value: 0</p>
+        </div>
+
+        <div class="player" id="Matt">
+            <div class="holder">
+                <h1>Matt</h1>
+                <input type="number" step="0.05" value="0.9" id="Matt multiplier">
+            </div>
+            <p id="Matt value">Player Value: 0</p>
+        </div>
+
+    </div>
+
+
+    <div class="container cards" id="cards container">
+        <div class="card town" id="Bodyguard" draggable="true">
+            <p>Bodyguard</p>
+            <p>+4</p>
+            <img src="images/Bodyguard.webp">
+        </div>
+
+        <div class="card town" id="Deputy" draggable="true">
+            <p>Deputy</p>
+            <p>+4</p>
+            <img src="images/Deputy.webp">
+        </div>
+
+        <div class="card town" id="Doctor" draggable="true">
+            <p>Doctor</p>
+            <p>+4</p>
+            <img src="images/Doctor.webp">
+        </div>
+
+        <div class="card town" id="Investigator" draggable="true">
+            <p>Investigator</p>
+            <p>+6</p>
+            <img src="images/Investigator.webp">
+        </div>
+
+        <div class="card town" id="Mayor" draggable="true">
+            <p>Mayor</p>
+            <p>+8</p>
+            <img src="images/Mayor.webp">
+        </div>
+
+        <div class="card town" id="Medium" draggable="true">
+            <p>Medium</p>
+            <p>+3</p>
+            <img src="images/Medium.webp">
+        </div>
+
+        <div class="card town" id="Sheriff" draggable="true">
+            <p>Sheriff</p>
+            <p>+7</p>
+            <img src="images/Sheriff.webp">
+        </div>
+
+        <div class="card town" id="Survivor" draggable="true">
+            <p>Survivor</p>
+            <p>+4</p>
+            <img src="images/Survivor.webp">
+        </div>
+
+        <div class="card town" id="Veteran" draggable="true">
+            <p>Veteran</p>
+            <p>+3</p>
+            <img src="images/Veteran.webp">
+        </div>
+
+        <div class="card town" id="Vigilante" draggable="true">
+            <p>Vigilante</p>
+            <p>+5</p>
+            <img src="images/Vigilante.webp">
+        </div>
+
+        <div class="card town" id="Townie" draggable="true">
+            <p>Townie</p>
+            <p>+1</p>
+            <img src="images/Town.webp">
+        </div>
+
+        <div class="card town" id="Peaceful Townie" draggable="true">
+            <p>Peaceful Townie</p>
+            <p>-1</p>
+            <img src="images/Town.webp">
+        </div>
+
+        <div class="card town" id="Spiteful Townie" draggable="true">
+            <p>Spiteful Townie</p>
+            <p>-1</p>
+            <img src="images/Town.webp">
+        </div>
+
+        <div class="card town" id="Politician" draggable="true">
+            <p>Politician</p>
+            <p>-2</p>
+            <img src="images/Town.webp">
+        </div>
+
+
+
+        <div class="card mafia" id="Godfather" draggable="true">
+            <p>Godfather</p>
+            <p>-8</p>
+            <img src="images/Godfather.webp">
+        </div>
+
+        <div class="card mafia" id="Janitor" draggable="true">
+            <p>Janitor</p>
+            <p>-8</p>
+            <img src="images/Janitor.webp">
+        </div>
+
+        <div class="card mafia" id="Mafioso" draggable="true">
+            <p>Mafioso</p>
+            <p>-6</p>
+            <img src="images/Mafioso.webp">
+        </div>
+
+        <div class="card mafia" id="Consigliere" draggable="true">
+            <p>Consigliere</p>
+            <p>-10</p>
+            <img src="images/Consigliere.webp">
+        </div>
+
+        <div class="card mafia" id="Blackmailer" draggable="true">
+            <p>Blackmailer</p>
+            <p>-9</p>
+            <img src="images/Blackmailer.webp">
+        </div>
+
+
+        <div class="card neutral" id="Amnesiac" draggable="true">
+            <p>Amnesiac</p>
+            <p>0</p>
+            <img src="images/Amnesiac.webp">
+        </div>
+
+        <div class="card neutral" id="Executioner" draggable="true">
+            <p>Executioner</p>
+            <p>-4</p>
+            <img src="images/Executioner.webp">
+        </div>
+
+        <div class="card neutral" id="Jester" draggable="true">
+            <p>Jester</p>
+            <p>-1</p>
+            <img src="images/Jester.webp">
+        </div>
+
+        <div class="card neutral" id="Serial Killer" draggable="true">
+            <p>Serial Killer</p>
+            <p>-8</p>
+            <img src="images/Serial Killer.webp">
+        </div>
+
+        <div class="card neutral" id="Werewolf" draggable="true">
+            <p>Werewolf</p>
+            <p>-9</p>
+            <img src="images/Werewolf.webp">
+        </div>
+
+        <div class="card neutral" id="Witch" draggable="true">
+            <p>Witch</p>
+            <p>-5</p>
+            <img src="images/Witch.webp">
+        </div>
+    </div>
+</body>
+
+</html>
